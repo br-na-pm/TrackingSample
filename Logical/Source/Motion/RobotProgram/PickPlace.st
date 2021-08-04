@@ -31,10 +31,10 @@
 	MoveL(PickOffsetPos);
 	TrackStop(MachineFrame, PlaceOffsetPos);
 	MoveL(PlacePos);
-	WaitTime(1);
-	MoveL(PlaceOffsetPos);
+	WaitTime(0.5);
 	ProductPicked := FALSE;
 	ProductPlaced := TRUE;
+	MoveL(PlaceOffsetPos);	
 	MoveL(WaitPos);
 	ProductPlaced := FALSE;
 	

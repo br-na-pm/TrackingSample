@@ -52,7 +52,7 @@ PROGRAM _CYCLIC
 			IF (TrkFrmInfo.Distance > 400 AND TrkFrmInfo.Distance < 800 AND NOT ProductPlaced)  THEN
 				ProductSelected	:= TRUE;
 				ChoosenPickFrame	:= TrkFrmInfo.TrackingFrameID;
-			ELSIF TrkFrmInfo.Distance > 800 OR ProductPlaced THEN
+			ELSIF (*TrkFrmInfo.Distance > 800 OR *)ProductPlaced THEN
 				ProductSelected		:= FALSE;
 				ChoosenPickFrame	:= 0;
 				DeleteFrame			:= TRUE;
