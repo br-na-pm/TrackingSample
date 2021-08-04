@@ -1,0 +1,8 @@
+VAR
+	DeltaRobot4Ax : MpDelta4Axis;
+	JointQ2 : MpAxisBasic;
+	JointQ3 : MpAxisBasic;
+	JointQC : MpAxisBasic;
+	JointQ1 : MpAxisBasic;
+	JointPar : MpAxisBasicParType := (Homing:=(Mode:=mcHOMING_DEFAULT));
+END_VAR

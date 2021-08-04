@@ -1,0 +1,3 @@
+VAR
+	Conveyor : MpAxisBasic;
+END_VAR

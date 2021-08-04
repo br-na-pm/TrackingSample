@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="Cfg1.Hardware.hw" LastWriteTime="11/03/2020 11:19:38" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="5PC910.SX02-00" Type="5PC910.SX02-00" X="-4103.80664" Y="-3204.09375" />
+    <Module Name="5AC901.BX02-00" Type="5AC901.BX02-00" X="-4044.80664" Y="-3171.09375" />
+    <Module Name="5LS182.6-2" Type="5LS182.6-2" X="-4039.80664" Y="-3158.09375" />
+    <Module Name="ACP" Type="5PC900.TS17-00" X="-4044.80664" Y="-3194.09375" />
+    <Module Name="8LSA44.DB060S200-3" Type="8LSA44.DB060S200-3" X="-3564.4668" Y="-2805.301" />
+    <Module Name="8LSA44.DB060S200-3a" Type="8LSA44.DB060S200-3" X="-3684.4668" Y="-2672.301" />
+    <Module Name="8LSA44.DB060S200-3b" Type="8LSA44.DB060S200-3" X="-3684.4668" Y="-2805.301" />
+    <Module Name="8LSA26.D9060S200-3" Type="8LSA26.D9060S200-3" X="-3444.4668" Y="-2805.301" />
+    <Module Name="8LSA26.D9060S200-3a" Type="8LSA26.D9060S200-3" X="-3444.4668" Y="-2672.301" />
+    <Module Name="D5_Arm_2_3" Type="8BVI0055HWD0.000-1" X="-3684.4668" Y="-3077.301" />
+    <Module Name="8BAC0120.001-2a" Type="8BAC0120.001-2" X="-3664.8667" Y="-2902.301" />
+    <Module Name="8BAC0120.001-2b" Type="8BAC0120.001-2" X="-3681.66675" Y="-2902.301" />
+    <Module Name="D5_Arm_1" Type="8BVI0055HWS0.000-1" X="-3564.4668" Y="-3077.301" />
+    <Module Name="8BAC0120.001-2" Type="8BAC0120.001-2" X="-3561.66675" Y="-2902.301" />
+    <Module Name="D5_Arm_4_5" Type="8BVI0014HWD0.000-1" X="-3444.4668" Y="-3077.301" />
+    <Module Name="8BAC0120.001-2c" Type="8BAC0120.001-2" X="-3424.8667" Y="-2902.301" />
+    <Module Name="8BAC0120.001-2d" Type="8BAC0120.001-2" X="-3441.66675" Y="-2902.301" />
+    <Module Name="ACOPOSmulti_Rack_PS" Type="8B0P0220HW00.000-1" X="-3805.4668" Y="-3077.301" />
+  </Modules>
+  <Links>
+    <Link From="5LS182.6-2" To="ACOPOSmulti_Rack_PS" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="-3998.80664" Y="-3150.09375" />
+      <Point X="-3998.80664" Y="-3150.09375" />
+      <Point X="-3988.80664" Y="-3150.09375" />
+      <Point X="-3974.80664" Y="-3150.09375" />
+      <Point X="-3974.80664" Y="-3070.301" />
+      <Point X="-3805.567" Y="-3070.301" />
+      <Point X="-3793.567" Y="-3070.301" />
+      <Point X="-3793.567" Y="-3070.301" />
+    </Link>
+    <Link From="8BAC0120.001-2" To="8LSA44.DB060S200-3" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="-3554.8667" Y="-2885.701" />
+      <Point X="-3554.8667" Y="-2885.701" />
+      <Point X="-3564.8667" Y="-2885.701" />
+      <Point X="-3575" Y="-2885.701" />
+      <Point X="-3575" Y="-2845" />
+      <Point X="-3570.9668" Y="-2845" />
+      <Point X="-3570.9668" Y="-2804.30078" />
+      <Point X="-3542.9668" Y="-2804.30078" />
+      <Point X="-3542.9668" Y="-2806.20117" />
+      <Point X="-3542.9668" Y="-2799.20117" />
+      <Point X="-3542.9668" Y="-2799.20117" />
+    </Link>
+    <Link From="8BAC0120.001-2a" To="8LSA44.DB060S200-3a" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="-3658.067" Y="-2885.701" />
+      <Point X="-3658.067" Y="-2885.701" />
+      <Point X="-3647.067" Y="-2885.701" />
+      <Point X="-3599.4668" Y="-2885.701" />
+      <Point X="-3599.4668" Y="-2711.301" />
+      <Point X="-3662.9668" Y="-2711.301" />
+      <Point X="-3662.9668" Y="-2673.20117" />
+      <Point X="-3662.9668" Y="-2666.20117" />
+      <Point X="-3662.9668" Y="-2666.20117" />
+    </Link>
+    <Link From="8BAC0120.001-2b" To="8LSA44.DB060S200-3b" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="-3674.8667" Y="-2885.701" />
+      <Point X="-3674.8667" Y="-2885.701" />
+      <Point X="-3684.8667" Y="-2885.701" />
+      <Point X="-3695" Y="-2885.701" />
+      <Point X="-3695" Y="-2845" />
+      <Point X="-3690.9668" Y="-2845" />
+      <Point X="-3690.9668" Y="-2804.30078" />
+      <Point X="-3662.9668" Y="-2804.30078" />
+      <Point X="-3662.9668" Y="-2806.20117" />
+      <Point X="-3662.9668" Y="-2799.20117" />
+      <Point X="-3662.9668" Y="-2799.20117" />
+    </Link>
+    <Link From="8BAC0120.001-2c" To="8LSA26.D9060S200-3a" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="-3418.067" Y="-2885.701" />
+      <Point X="-3418.067" Y="-2885.701" />
+      <Point X="-3407.067" Y="-2885.701" />
+      <Point X="-3359.4668" Y="-2885.701" />
+      <Point X="-3359.4668" Y="-2711.301" />
+      <Point X="-3422.9668" Y="-2711.301" />
+      <Point X="-3422.9668" Y="-2673.20117" />
+      <Point X="-3422.9668" Y="-2666.20117" />
+      <Point X="-3422.9668" Y="-2666.20117" />
+    </Link>
+    <Link From="8BAC0120.001-2d" To="8LSA26.D9060S200-3" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="-3434.8667" Y="-2885.701" />
+      <Point X="-3434.8667" Y="-2885.701" />
+      <Point X="-3444.8667" Y="-2885.701" />
+      <Point X="-3456.4668" Y="-2885.701" />
+      <Point X="-3456.4668" Y="-2841.301" />
+      <Point X="-3436.9668" Y="-2841.301" />
+      <Point X="-3436.9668" Y="-2811.301" />
+      <Point X="-3422.9668" Y="-2811.301" />
+      <Point X="-3422.9668" Y="-2806.20117" />
+      <Point X="-3422.9668" Y="-2799.20117" />
+      <Point X="-3422.9668" Y="-2799.20117" />
+    </Link>
+    <Link From="8LSA26.D9060S200-3" To="D5_Arm_4_5" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="-3394.9668" Y="-2799.201" />
+      <Point X="-3394.9668" Y="-2799.201" />
+      <Point X="-3394.9668" Y="-2806.201" />
+      <Point X="-3394.9668" Y="-2818.30078" />
+      <Point X="-3428.3667" Y="-2818.30078" />
+      <Point X="-3428.3667" Y="-2854.401" />
+      <Point X="-3428.3667" Y="-2862.401" />
+      <Point X="-3428.3667" Y="-2862.401" />
+    </Link>
+    <Link From="8LSA26.D9060S200-3a" To="D5_Arm_4_5" FromPort="MT" ToPort="MT2" IsRoutedByUser="False">
+      <Point X="-3394.9668" Y="-2666.201" />
+      <Point X="-3394.9668" Y="-2666.201" />
+      <Point X="-3394.9668" Y="-2673.201" />
+      <Point X="-3394.9668" Y="-2681.30078" />
+      <Point X="-3366.4668" Y="-2681.30078" />
+      <Point X="-3366.4668" Y="-2811.30078" />
+      <Point X="-3411.567" Y="-2811.30078" />
+      <Point X="-3411.567" Y="-2854.401" />
+      <Point X="-3411.567" Y="-2862.401" />
+      <Point X="-3411.567" Y="-2862.401" />
+    </Link>
+    <Link From="8LSA44.DB060S200-3" To="D5_Arm_1" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="-3514.9668" Y="-2799.201" />
+      <Point X="-3514.9668" Y="-2799.201" />
+      <Point X="-3514.9668" Y="-2806.201" />
+      <Point X="-3514.9668" Y="-2811.30078" />
+      <Point X="-3548.3667" Y="-2811.30078" />
+      <Point X="-3548.3667" Y="-2854.401" />
+      <Point X="-3548.3667" Y="-2862.401" />
+      <Point X="-3548.3667" Y="-2862.401" />
+    </Link>
+    <Link From="8LSA44.DB060S200-3a" To="D5_Arm_2_3" FromPort="MT" ToPort="MT2" IsRoutedByUser="False">
+      <Point X="-3634.9668" Y="-2666.201" />
+      <Point X="-3634.9668" Y="-2666.201" />
+      <Point X="-3634.9668" Y="-2673.201" />
+      <Point X="-3634.9668" Y="-2681.30078" />
+      <Point X="-3606.4668" Y="-2681.30078" />
+      <Point X="-3606.4668" Y="-2818.30078" />
+      <Point X="-3651.567" Y="-2818.30078" />
+      <Point X="-3651.567" Y="-2854.401" />
+      <Point X="-3651.567" Y="-2862.401" />
+      <Point X="-3651.567" Y="-2862.401" />
+    </Link>
+    <Link From="8LSA44.DB060S200-3b" To="D5_Arm_2_3" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="-3634.9668" Y="-2799.201" />
+      <Point X="-3634.9668" Y="-2799.201" />
+      <Point X="-3634.9668" Y="-2806.201" />
+      <Point X="-3634.9668" Y="-2811.30078" />
+      <Point X="-3668.3667" Y="-2811.30078" />
+      <Point X="-3668.3667" Y="-2854.401" />
+      <Point X="-3668.3667" Y="-2862.401" />
+      <Point X="-3668.3667" Y="-2862.401" />
+    </Link>
+    <Link From="ACOPOSmulti_Rack_PS" To="D5_Arm_1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="-3782.567" Y="-3070.301" />
+      <Point X="-3782.567" Y="-3070.301" />
+      <Point X="-3782.567" Y="-3078.301" />
+      <Point X="-3782.567" Y="-3098.301" />
+      <Point X="-3629.4668" Y="-3098.301" />
+      <Point X="-3629.4668" Y="-3070.301" />
+      <Point X="-3564.567" Y="-3070.301" />
+      <Point X="-3552.567" Y="-3070.301" />
+      <Point X="-3552.567" Y="-3070.301" />
+    </Link>
+    <Link From="D5_Arm_1" To="D5_Arm_2_3" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="-3540.667" Y="-3070.301" />
+      <Point X="-3540.667" Y="-3070.301" />
+      <Point X="-3540.667" Y="-3078.301" />
+      <Point X="-3540.667" Y="-3105.301" />
+      <Point X="-3672.567" Y="-3105.301" />
+      <Point X="-3672.567" Y="-3078.301" />
+      <Point X="-3672.567" Y="-3070.301" />
+      <Point X="-3672.567" Y="-3070.301" />
+    </Link>
+    <Link From="D5_Arm_2_3" To="D5_Arm_4_5" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="-3660.66675" Y="-3070.301" />
+      <Point X="-3660.66675" Y="-3070.301" />
+      <Point X="-3646.66675" Y="-3070.301" />
+      <Point X="-3636.4668" Y="-3070.301" />
+      <Point X="-3636.4668" Y="-3091.301" />
+      <Point X="-3516.4668" Y="-3091.301" />
+      <Point X="-3516.4668" Y="-3070.301" />
+      <Point X="-3444.567" Y="-3070.301" />
+      <Point X="-3432.567" Y="-3070.301" />
+      <Point X="-3432.567" Y="-3070.301" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="-3834.94531" Y="-3173.53369" Width="501.548584" Height="608.7611">
+      <Text Color="DarkOrange" FontName="Arial" FontSize="12" FontStyle="Bold" AlignmentHorizontal="Left">
+                             CODIAN D5-1100 - R1</Text>
+      <Background Color="PeachPuff" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>

@@ -1,0 +1,175 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=ProductDet 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=200 Type=100 Scope=60 Force=60 Index=6 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                          gConveyorACtrl                        ConveyorCtrl_type    0 "                                                               *"    0   24    1    0    0    1         
+                                     Cmd                     ConveyorCtrlCmd_type    0 "                                                               *"    1   24    1    0    0    1         
+                                 PowerOn                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                    Home                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                            MoveAdditive                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                            MoveAbsolute                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                            MoveVelocity                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                  Update                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                  Status                  ConveyorCtrlStatus_type    0 "                                                               *"    1   24    1    0    0    1         
+                                  Active                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 PowerOn                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                 IsHomed                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                              MoveActive                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                MoveDone                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                Position                                    LREAL    0 "                                                          793.61"    2   14    1   10    0    0         
+                                Velocity                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
+                            MovementLeft                                    LREAL    0 "                                             -127.84199999999999"    2   14    1   10    0    0         
+                        PosStartMovement                                    LREAL    0 "                                              465.76800000000003"    2   14    1   10    0    0         
+                              UpdateDone                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                               Parameter               ConveyorCtrlParameter_type    0 "                                                               *"    1   24    1    0    0    1         
+                             ConveyorPar                       MpAxisBasicParType    0 "                                                               *"    2   24    1    0    0    1         
+                                Position                                    LREAL    0 "                                                             0.0"    3   14    1   10    0    0         
+                                Distance                                    LREAL    0 "                                                           200.0"    3   14    1   10    0    0         
+                                Velocity                                     REAL    0 "                                                            50.0"    3    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                           200.0"    3    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                           200.0"    3    8    1   10    0    0         
+                               Direction                                     DINT    0 "                                                               0"    3    4    1   10    0    0 e,0,mcDI
+
+                                  Homing                         MpAxisHomingType    0 "                                                               *"    3   24    1    0    0    0         
+                                    Mode                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mcHO
+
+                                Position                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                                 Options                  MpAxisHomingOptionsType    0 "                                                               *"    4   24    1    0    0    0         
+                           StartVelocity                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                          HomingVelocity                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                              SwitchEdge                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcDI
+
+                          StartDirection                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcDI
+
+                         HomingDirection                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcDI
+
+                          ReferencePulse                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcSW
+
+                           KeepDirection                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcSW
+
+          ReferencePulseBlockingDistance                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                             TorqueLimit                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+             BlockDetectionPositionError                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                  PositionErrorStopLimit                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+          RestorePositionVariableAddress                                    UDINT    0 "                                                               0"    5    7    1   10    0    0         
+                     DriveSpecificHoming                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcSW
+
+                 DriveSpecificHomingMode                                     SINT    0 "                                                               0"    5    2    1   10    0    0         
+                            SensorOffset                                    LREAL    0 "                                                             0.0"    5   14    1   10    0    0         
+                   SensorOffsetDirection                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcDI
+
+                                     Jog                            MpAxisJogType    0 "                                                               *"    3   24    1    0    0    0         
+                                Velocity                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                           LimitPosition               MpAxisJogLimitPositionType    0 "                                                               *"    4   24    1    0    0    0         
+                           FirstPosition                                    LREAL    0 "                                                               *"    5   14    1   10    0    0         
+                            LastPosition                                    LREAL    0 "                                                               *"    5   14    1   10    0    0         
+                                    Jerk                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                                    Stop                           MpAxisStopType    0 "                                                               *"    3   24    1    0    0    0         
+                            Deceleration                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                                    Jerk                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                          StopAtPosition                 MpAxisStopAtPositionType    0 "                                                               *"    4   24    1    0    0    0         
+                                Activate                                     BOOL    0 "                                                               *"    5    1    1    2    0    0         
+                            Deceleration                                     REAL    0 "                                                               *"    5    8    1   10    0    0         
+                                Position                                    LREAL    0 "                                                               *"    5   14    1   10    0    0         
+                               LimitLoad                      MpAxisLimitLoadType    0 "                                                               *"    3   24    1    0    0    0         
+                                    Load                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                               Direction                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mcDI
+
+                                AutoTune                       MpAxisAutoTuneType    0 "                                                               *"    3   24    1    0    0    0         
+                                    Mode                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mcAX
+
+                             Orientation                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mcAC
+
+                       MaxCurrentPercent                                     REAL    0 "                                                               *"    4    8    1   10    0    0         
+                             MaxDistance                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                        MaxPositionError                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                  SaveControllerSettings                                     BOOL    0 "                                                               *"    4    1    1    2    0    0         
+                          LoopFilterMode                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mcAX
+
+                                 Options                MpAxisAutoTuneOptionsType    0 "                                                               *"    4   24    1    0    0    0         
+                     MaxProportionalGain                                     REAL    0 "                                                               *"    5    8    1   10    0    0         
+                SpeedTuneLoopFilter1Mode                                     DINT    0 "                                                               *"    5    4    1   10    0    0 e,0,mcAC
+
+                  SpeedTuneFilterTmeMode                                     DINT    0 "                                                               *"    5    4    1   10    0    0 e,0,mcAC
+
+                                    Jerk                                     REAL    0 "                                                             0.0"    3    8    1   10    0    0         
+                                gPowerOn                                     BOOL    0 "                                                            TRUE"    0    1    1    2    0    0         
+                       ManualCreateFrame                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                            ManualFrameX                                    LREAL    0 "                                                             0.0"    0   14    1   10    1    0         
+                            ManualFrameY                                    LREAL    0 "                                                            50.0"    0   14    1   10    1    0         
+                              gDeltaCtrl                           DeltaCtrl_type    0 "                                                               *"    0   24    1    0    0    1         
+                                     Cmd                        DeltaCtrlCmd_type    0 "                                                               *"    1   24    1    0    0    1         
+                                 PowerOn                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                    Home                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                             MoveProgram                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                               Interrupt                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                Continue                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                  Status                     DeltaCtrlStatus_type    0 "                                                               *"    1   24    1    0    0    1         
+                                  Active                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 PowerOn                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                 IsHomed                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                              MoveActive                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                MoveDone                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 Stopped                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                InMotion                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                           ProductPicked                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                           ProductPlaced                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                         MoveInterrupted                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                          ProductInRange                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                         InterruptStatus                                     DINT    0 "                                                               0"    2    4    1   10    0    0 e,0,mcIN
+
+                               Parameter                  DeltaCtrlParameter_type    0 "                                                               *"    1   24    1    0    0    1         
+                                Override                                     REAL    0 "                                                           100.0"    2    8    1   10    0    0         
+                                DeltaPar                      MpDelta4AxisParType    0 "                                                               *"    2   24    1    0    0    1         
+                             ProgramName                              STRING[260]    0 "                                                  'PickPlace.st'"    3    9  261    1    0    0         
+                      MoveProgramOptions                          McPrgAdvParType    0 "                                                               *"    3   24    1    0    0    1         
+                             InitProgram                              STRING[260]    0 "                                                              ''"    4    9  261    1    0    0         
+                               StartMode                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mcPR
+
+                          StartPointType                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mcPR
+
+                     StartPointParameter                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                  RepositioningParameter                    McPrgAxesReposParType    0 "                                                               *"    4   24    1    0    0    1         
+                                    Type                                     DINT    0 "                                                               0"    5    4    1   10    0    0 e,0,mcPR
+
+                                  String                              STRING[260]    0 "                                                              ''"    5    9  261    1    0    0         
+                      AxisVelocityFactor                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                         SaveRestartData                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mcSW
+
+                                     Jog                      MpDelta4AxisJogType    0 "                                                               *"    3   24    1    0    0    1         
+                                Velocity                               REAL[0..3]    0 "                                                               *"    4    8    4    0    0    1         
+                             Velocity[0]                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                             Velocity[1]                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                             Velocity[2]                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                             Velocity[3]                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                              PathLimits                      McJogPathLimitsType    0 "                                                               *"    4   24    1    0    0    1         
+                                Velocity                                     REAL    0 "                                                          1000.0"    5    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                         10000.0"    5    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                         10000.0"    5    8    1   10    0    0         
+                                    Jerk                                     REAL    0 "                                                             0.0"    5    8    1   10    0    0         
+                             CoordSystem                                    UDINT    0 "                                                               0"    4    7    1   10    0    0         
+                                Position                              LREAL[0..3]    0 "                                                               *"    3   14    4    0    0    1         
+                             Position[0]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Position[1]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Position[2]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Position[3]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                                Distance                              LREAL[0..3]    0 "                                                               *"    3   14    4    0    0    1         
+                             Distance[0]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Distance[1]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Distance[2]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                             Distance[3]                                    LREAL    0 "                                                             0.0"    4   14    1   10    0    0         
+                                Velocity                                     REAL    0 "                                                           100.0"    3    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                          1000.0"    3    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                          1000.0"    3    8    1   10    0    0         
+                                    Jerk                                     REAL    0 "                                                             0.0"    3    8    1   10    0    0         
+                             CoordSystem                                    UDINT    0 "                                                               0"    3    7    1   10    0    0         
+                          ManualMoveType                                     DINT    0 "                                                               0"    3    4    1   10    0    0 e,0,mcMO
+

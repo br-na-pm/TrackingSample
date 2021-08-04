@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="5.16.9" SubType="binary" Description="[mapp Motion] Robotics service library" Prototype="True" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>McPathSvc.typ</File>
+    <File>McPathSvc.fun</File>
+    <File>McPathSvc.var</File>
+  </Files>
+</Library>

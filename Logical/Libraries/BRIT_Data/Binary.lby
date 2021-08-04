@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.2.72?>
+<Library Version="1.00.2" SubType="Binary" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">BRIT_Data.typ</File>
+    <File Description="Exported constants">BRIT_Data.var</File>
+    <File Description="Exported functions and function blocks">BRIT_Data.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="asieccon" FromVersion="0.00.0" />
+    <Dependency ObjectName="runtime" FromVersion="0.00.0" />
+  </Dependencies>
+</Library>

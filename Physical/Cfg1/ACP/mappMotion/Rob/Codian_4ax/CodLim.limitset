@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="LimitArm" Type="limitset">
+    <Selector ID="Type" Value="RotaryLimit">
+      <Selector ID="Position" Value="Used">
+        <Property ID="LowerLimitMin" Value="-1.79769313486231E308" />
+        <Property ID="UpperLimitMax" Value="1.79769313486231E308" />
+        <Property ID="LowerLimit" Value="-38.0" />
+        <Property ID="UpperLimit" Value="88.0" />
+      </Selector>
+      <Selector ID="Velocity" Value="Basic">
+        <Property ID="VelocityMax" Value="3.4E38" />
+        <Property ID="Velocity" Value="5000" />
+      </Selector>
+      <Selector ID="Acceleration" Value="Basic">
+        <Property ID="AccelerationMax" Value="3.4E38" />
+        <Property ID="Acceleration" Value="50000.0" />
+      </Selector>
+      <Selector ID="Deceleration" Value="Basic">
+        <Property ID="DecelerationMax" Value="3.4E38" />
+        <Property ID="Deceleration" Value="50000.0" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="0" />
+      <Property ID="TorqueIsReadOnly" Value="0" />
+    </Selector>
+  </Element>
+  <Element ID="LimitRotation" Type="limitset">
+    <Selector ID="Type" Value="RotaryLimit">
+      <Selector ID="Velocity" Value="Basic">
+        <Property ID="VelocityMax" Value="3.4E38" />
+        <Property ID="Velocity" Value="3600" />
+      </Selector>
+      <Selector ID="Acceleration" Value="Basic">
+        <Property ID="AccelerationMax" Value="3.4E38" />
+        <Property ID="Acceleration" Value="36000" />
+      </Selector>
+      <Selector ID="Deceleration" Value="Basic">
+        <Property ID="DecelerationMax" Value="3.4E38" />
+        <Property ID="Deceleration" Value="36000" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="0" />
+      <Property ID="TorqueIsReadOnly" Value="0" />
+    </Selector>
+  </Element>
+  <Element ID="LimitTilt" Type="limitset">
+    <Selector ID="Type" Value="RotaryLimit">
+      <Selector ID="Velocity" Value="Basic">
+        <Property ID="VelocityMax" Value="3.4E38" />
+        <Property ID="Velocity" Value="3600" />
+      </Selector>
+      <Selector ID="Acceleration" Value="Basic">
+        <Property ID="AccelerationMax" Value="3.4E38" />
+        <Property ID="Acceleration" Value="36000" />
+      </Selector>
+      <Selector ID="Deceleration" Value="Basic">
+        <Property ID="DecelerationMax" Value="3.4E38" />
+        <Property ID="Deceleration" Value="36000" />
+      </Selector>
+      <Property ID="JerkIsReadOnly" Value="0" />
+      <Property ID="TorqueIsReadOnly" Value="0" />
+    </Selector>
+  </Element>
+</Configuration>

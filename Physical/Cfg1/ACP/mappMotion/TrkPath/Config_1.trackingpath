@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gTrackingPath_Pick_R1" Type="trackingpath">
+    <Selector ID="Type" Value="Linear">
+      <Property ID="MaxTrackingFrames" Value="50" />
+      <Selector ID="MotionSource" Value="Axis">
+        <Property ID="AxisRef" Value="gAxisConvA" />
+      </Selector>
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

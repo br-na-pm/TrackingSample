@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+    <Object Type="Package">Connectivity</Object>
+    <Object Type="Package">TextSystem</Object>
+    <Object Type="Package">UnitSystem</Object>
+    <Object Type="Package">AccessAndSecurity</Object>
+    <Object Type="Package">mappServices</Object>
+    <Object Type="Package">mappView</Object>
+    <Object Type="Package">mappCockpit</Object>
+    <Object Type="Package">mappMotion</Object>
+    <Object Type="Package">DTM</Object>
+    <Object Type="Package">ExternalHardware</Object>
+    <Object Type="Package">mappVision</Object>
+  </Objects>
+  <Configuration ModuleId="5PC900.TS17-00">
+    <AutomationRuntime Version="B4.82" />
+    <Build GccVersion="6.3.0" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Safety SafetyRelease="1.10" />
+    <TargetSourceCompare EnableTargetSourceCompare="true" />
+    <Transfer AddToUserPart="False" AdditionalUserDir="C:\Users\ciriolo\Desktop\USER" AllowDowngrade="False" AllowInitialTransfer="False" AllowPartitioning="False" ExecuteInitExitProgram="False" ForceInitialTransfer="False" IdentificationTypeValue="" IgnoreVersion="False" KeepNonVolatileMemory="False" ModuleSystemForPip="" PreserveVariableValues="True" ProjectConsistent="True" RebootDuringTransfer="False" SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
+    <Vc FirmwareVersion="V4.33.0" />
+    <TechnologyPackages>
+      <SafetyRelease Version="1.10.0" />
+    </TechnologyPackages>
+    <OnlineConfiguration Name="ARwin" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=27" ConnectionParameters="/RT=1000 /AM=* /DAIP=192.168.150.227 /REPO=11159 /ANSL=1" Description="" />
+  </Configuration>
+</Cpu>

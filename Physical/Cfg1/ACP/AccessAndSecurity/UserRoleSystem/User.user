@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="Anonymous" Type="User">
+    <Property ID="UserID" Value="10" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Everyone" />
+    </Group>
+  </Element>
+  <Element ID="1" Type="User">
+    <Property ID="UserID" Value="1" />
+    <Property ID="Password" Value="phhjRsVjojxmRtM2GB03J1iB24fWxgb06E43LVfHNkoH1AW6Z3Y=" Description="25405" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="User_1 " />
+    </Group>
+  </Element>
+  <Element ID="2" Type="User">
+    <Property ID="UserID" Value="2" />
+    <Property ID="Password" Value="QitiTS5qj9oQrozRQKNh1DJq0fvyxXfVHFWmDy1vyQSaUjlxiKI=" Description="95088" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="User_2" />
+    </Group>
+  </Element>
+  <Element ID="3" Type="User">
+    <Property ID="UserID" Value="3" />
+    <Property ID="Password" Value="VF35J5uW9lPk4mvoAg2e3C8f/nQUqpkrG4eT+OeZELVf7pb8a6Q=" Description="3969" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="User_3" />
+    </Group>
+  </Element>
+</Configuration>

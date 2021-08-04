@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">Rob_1_4ax</Object>
+    <Object Type="Package" Description="D5_1100">Codian_4ax</Object>
+    <Object Type="File">Config_7.axesgroupfeature</Object>
+  </Objects>
+</Package>
