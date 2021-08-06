@@ -22,6 +22,11 @@ PROGRAM _CYCLIC
 		gConveyorACtrl.Cmd.PowerOn	:= TRUE;
 	END_IF;
 	
+	IF EDGEPOS(gRun) THEN	
+		ManualCreateFrame := TRUE;
+		gConveyorACtrl.Cmd.MoveVelocity := TRUE;
+	END_IF	
+	
 	IF ManualCreateFrame AND TRF_Id_Manual = 0 THEN
 		gDeltaCtrl.Status.ProductPlaced := FALSE;
 		MC_BR_TrackingFrameCreateManual.Execute	:= TRUE;

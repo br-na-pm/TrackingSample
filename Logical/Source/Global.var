@@ -5,6 +5,7 @@ VAR
 	gPlaceProduct : BOOL := FALSE;
 	gPickProduct : BOOL := FALSE;
 	JointAxisPos : ARRAY[0..3] OF LREAL := [4(0.0)];
+	gRun : BOOL := FALSE;
 	gPowerOn : BOOL := FALSE;
 	PVIposition : ARRAY[0..6] OF LREAL;
 END_VAR

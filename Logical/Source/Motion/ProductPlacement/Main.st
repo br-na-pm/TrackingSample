@@ -7,7 +7,7 @@ PROGRAM _INIT
 	gConveyorBCtrl.Parameter.ConveyorPar.Acceleration	:= 200;
 	gConveyorBCtrl.Parameter.ConveyorPar.Deceleration	:= 200;
 	gConveyorBCtrl.Parameter.ConveyorPar.Distance		:= -400;
-	gConveyorBCtrl.Parameter.ConveyorPar.Velocity		:= 50;
+	gConveyorBCtrl.Parameter.ConveyorPar.Velocity		:= 5;
 	ManualFrameX	:= 0;
 	ManualFrameY	:= 0;
 	
@@ -21,6 +21,10 @@ PROGRAM _CYCLIC
 		gConveyorBCtrl.Cmd.Home	:= TRUE;
 		gConveyorBCtrl.Cmd.PowerOn	:= TRUE;
 	END_IF;
+	
+	IF EDGEPOS(gRun) THEN	
+		ManualCreateFrame := TRUE;
+	END_IF	
 	
 	IF ManualCreateFrame AND TRF_Id_Manual = 0 THEN
 		gDeltaCtrl.Status.ProductPlaced := FALSE;
