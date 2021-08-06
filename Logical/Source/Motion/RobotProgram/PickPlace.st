@@ -1,14 +1,16 @@
 	VAR CONSTANT
 
 		
-		WaitPos : McPointType := (Pos:=(X:=0,Y:=100,Z:=-800));
+		WaitPos : McPointType := (Pos:=(X:=0,Y:=100,Z:=-800)); // in machine frame
 		
-		TransitionPos : McPointType := (Pos:=(X:=-200,Y:=50,Z:=60));
+		TransitionPos_DF : McPointType := (Pos:=(X:=-200,Y:=50,Z:=40)); // DF - Drop Frame
+		TransitionPos_MF : McPointType := (Pos:=(X:=-70,Y:=120,Z:=-915)); // MF - Machine Frame
+		TransitionPos_PF : McPointType := (Pos:=(X:=50,Y:=150,Z:=60)); 	// PF - Pick Frame
 		
-		PlaceOffsetPos : McPointType := (Pos:=(X:=0,Y:=0,Z:=30));
+		PlaceOffsetPos : McPointType := (Pos:=(X:=0,Y:=0,Z:=30)); 		// in drop frame 
 		PlacePos : McPointType := (Pos:=(X:=0,Y:=0,Z:=10));
 		
-		PickOffsetPos : McPointType := (Pos:=(X:=0,Y:=0,Z:=30));
+		PickOffsetPos : McPointType := (Pos:=(X:=0,Y:=0,Z:=30));		// in pick frame
 		PickPos : McPointType := (Pos:=(X:=0,Y:=0,Z:=10));
 	
 	END_VAR
@@ -38,14 +40,13 @@
 	WaitTime(1);
 	ProductPicked := TRUE;
 	MoveL(PickOffsetPos);
-//	TrackStop(MachineFrame, WaitPos);
-	WaitUntilFlush(ChoosenPlaceFrame <> 0); 
-	TrackObject(ChoosenPlaceFrame, TransitionPos);
-	MoveL(PlaceOffsetPos);
+	MoveL(TransitionPos_PF);
+//	WaitUntilFlush(ChoosenPlaceFrame <> 0); // causes a motion stop
+	TrackObject(ChoosenPlaceFrame, PlaceOffsetPos);
 	MoveL(PlacePos);
-	WaitTime(1);
-	ProductPicked := FALSE;
 	ProductPlaced := TRUE;
+	ProductPicked := FALSE;
+	WaitTime(1);
 	MoveL(PlaceOffsetPos);	
 	ProductPlaced := FALSE;
 	TrackStop(MachineFrame, WaitPos);
