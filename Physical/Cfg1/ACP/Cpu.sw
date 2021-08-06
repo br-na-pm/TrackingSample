@@ -4,7 +4,9 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="DeltaCtrl" Source="Source.Motion.DeltaCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ConveyorA" Source="Source.Motion.ConveyorA.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ConveyorB" Source="Source.Motion.ConveyorB.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ProductDet" Source="Source.Motion.ProductDetect.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ProductPla" Source="Source.Motion.ProductPlacement.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Program1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="ServerP" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="ServerR" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -22,6 +24,7 @@
     <DataObject Name="assl1" Source="" Memory="UserROM" Language="Binary" />
   </DataObjects>
   <NcDataObjects>
+    <NcDataObject Name="McDriveLog" Source="" Memory="UserROM" Language="Binary" />
     <NcDataObject Name="mainCam" Source="" Memory="UserROM" Language="Binary" />
     <NcDataObject Name="mainCam2" Source="" Memory="UserROM" Language="Binary" />
     <NcDataObject Name="Cam" Source="" Memory="UserROM" Language="Binary" />
@@ -36,6 +39,9 @@
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ArFlatPrv" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ArCoal" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="McPathXT" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="mvLoader" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="mCoWebSc" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
@@ -47,18 +53,19 @@
     <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Hierarchy" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Rob1Ax" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="CodMec" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="CodAxGr" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="CodLim" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Rob1AxGr" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Rob1AxGr4" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="CodMec4" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Settings" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_7" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Conveyor" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="CodMec" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="CodAxGr" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Rob1AxGr" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_5" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_2" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="McPathXT" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="mvLoader" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TCLang" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="mCoWebSc" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Wr_Histor" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Al_History" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Al_Core" Source="" Memory="UserROM" Language="Binary" />
@@ -66,7 +73,6 @@
     <BinaryObject Name="GroupCore" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Ev_Core" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TraceConfi" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Settings" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Vis" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TriggerCfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ShuttleCfg" Source="" Memory="UserROM" Language="Binary" />
@@ -75,7 +81,6 @@
     <BinaryObject Name="asiol3" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Vtrak" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="User_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="asiol2" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="FifthAxCfg" Source="" Memory="UserROM" Language="Binary" />
@@ -146,12 +151,19 @@
     <LibraryObject Name="McPathGen" Source="Libraries.McPathGen.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="McProgInt" Source="Libraries.McProgInt.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="AsIODiag" Source="Libraries.AsIODiag.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="McTrkPath" Source="Libraries.McTrkPath.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="MpPick" Source="Libraries.MpPick.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="McPathSvc" Source="Libraries.McPathSvc.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="CoTrace" Source="Libraries.CoTrace.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="AsZip" Source="Libraries.AsZip.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="asarprof" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarlog" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsMem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsEPL" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsIO" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ViBase" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsXml" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsTCP" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -165,7 +177,6 @@
     <LibraryObject Name="AsHttp" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpRecipe" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="R_Lib" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="AsIO" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsARCfg" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="R_Lib_Trak" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="R_PkML" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -175,11 +186,5 @@
     <LibraryObject Name="R_Siko" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="R_Carousel" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="areventlog" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="McTrkPath" Source="Libraries.McTrkPath.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="MpPick" Source="Libraries.MpPick.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="McPathSvc" Source="Libraries.McPathSvc.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="CoTrace" Source="Libraries.CoTrace.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="AsZip" Source="Libraries.AsZip.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

@@ -5,7 +5,7 @@
     <Object Type="File">Hierarchy.objecthierarchy</Object>
     <Object Type="Package">Rob</Object>
     <Object Type="Package">TrkPath</Object>
-    <Object Type="File">Config_5.axis</Object>
+    <Object Type="File">Conveyor.axis</Object>
     <Object Type="File">Config.mappmotioncfg</Object>
   </Objects>
 </Package>

@@ -38,6 +38,21 @@
           </Group>
         </Selector>
       </Group>
+      <Group ID="Object[3]">
+        <Selector ID="Type" Value="TrackingPath">
+          <Property ID="TrackingPathRef" Value="gTrackingPath_Place_R1" />
+          <Group ID="Translation">
+            <Property ID="X" Value="0" />
+            <Property ID="Y" Value="260" />
+            <Property ID="Z" Value="0" />
+          </Group>
+          <Group ID="Orientation">
+            <Property ID="Angle1" Value="0.0" />
+            <Property ID="Angle2" Value="0.0" />
+            <Property ID="Angle3" Value="90" />
+          </Group>
+        </Selector>
+      </Group>
     </Group>
   </Element>
 </Configuration>

@@ -1,27 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<BR.AS.HardwareTopology Version="0.0.0.1">
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Cfg1.Hardware.hw" LastWriteTime="11/03/2020 11:19:38" />
+    <TimeStamp LogicalPath="Cfg1.Hardware.hw" LastWriteTime="08/05/2021 09:21:28" />
   </TimeStamps>
   <Modules>
-    <Module Name="5PC910.SX02-00" Type="5PC910.SX02-00" X="-4103.80664" Y="-3204.09375" />
-    <Module Name="5AC901.BX02-00" Type="5AC901.BX02-00" X="-4044.80664" Y="-3171.09375" />
-    <Module Name="5LS182.6-2" Type="5LS182.6-2" X="-4039.80664" Y="-3158.09375" />
-    <Module Name="ACP" Type="5PC900.TS17-00" X="-4044.80664" Y="-3194.09375" />
-    <Module Name="8LSA44.DB060S200-3" Type="8LSA44.DB060S200-3" X="-3564.4668" Y="-2805.301" />
-    <Module Name="8LSA44.DB060S200-3a" Type="8LSA44.DB060S200-3" X="-3684.4668" Y="-2672.301" />
-    <Module Name="8LSA44.DB060S200-3b" Type="8LSA44.DB060S200-3" X="-3684.4668" Y="-2805.301" />
-    <Module Name="8LSA26.D9060S200-3" Type="8LSA26.D9060S200-3" X="-3444.4668" Y="-2805.301" />
-    <Module Name="8LSA26.D9060S200-3a" Type="8LSA26.D9060S200-3" X="-3444.4668" Y="-2672.301" />
-    <Module Name="D5_Arm_2_3" Type="8BVI0055HWD0.000-1" X="-3684.4668" Y="-3077.301" />
-    <Module Name="8BAC0120.001-2a" Type="8BAC0120.001-2" X="-3664.8667" Y="-2902.301" />
-    <Module Name="8BAC0120.001-2b" Type="8BAC0120.001-2" X="-3681.66675" Y="-2902.301" />
-    <Module Name="D5_Arm_1" Type="8BVI0055HWS0.000-1" X="-3564.4668" Y="-3077.301" />
-    <Module Name="8BAC0120.001-2" Type="8BAC0120.001-2" X="-3561.66675" Y="-2902.301" />
-    <Module Name="D5_Arm_4_5" Type="8BVI0014HWD0.000-1" X="-3444.4668" Y="-3077.301" />
-    <Module Name="8BAC0120.001-2c" Type="8BAC0120.001-2" X="-3424.8667" Y="-2902.301" />
-    <Module Name="8BAC0120.001-2d" Type="8BAC0120.001-2" X="-3441.66675" Y="-2902.301" />
-    <Module Name="ACOPOSmulti_Rack_PS" Type="8B0P0220HW00.000-1" X="-3805.4668" Y="-3077.301" />
+    <Module Name="5PC910.SX02-00" Type="5PC910.SX02-00" X="-4103" Y="-3204" />
+    <Module Name="5AC901.BX02-00" Type="5AC901.BX02-00" X="-4044" Y="-3171" />
+    <Module Name="5LS182.6-2" Type="5LS182.6-2" X="-4039" Y="-3158" />
+    <Module Name="ACP" Type="5PC900.TS17-00" X="-4044" Y="-3194" />
+    <Module Name="8LSA44.DB060S200-3" Type="8LSA44.DB060S200-3" X="-3564" Y="-2805" />
+    <Module Name="8LSA44.DB060S200-3a" Type="8LSA44.DB060S200-3" X="-3684" Y="-2672" />
+    <Module Name="8LSA44.DB060S200-3b" Type="8LSA44.DB060S200-3" X="-3684" Y="-2805" />
+    <Module Name="8LSA26.D9060S200-3" Type="8LSA26.D9060S200-3" X="-3444" Y="-2805" />
+    <Module Name="8LSA26.D9060S200-3a" Type="8LSA26.D9060S200-3" X="-3444" Y="-2672" />
+    <Module Name="D5_Arm_2_3" Type="8BVI0055HWD0.000-1" X="-3684" Y="-3077" />
+    <Module Name="8BAC0120.001-2a" Type="8BAC0120.001-2" X="-3664.4" Y="-2902" />
+    <Module Name="8BAC0120.001-2b" Type="8BAC0120.001-2" X="-3681.2" Y="-2902" />
+    <Module Name="D5_Arm_1" Type="8BVI0055HWS0.000-1" X="-3564" Y="-3077" />
+    <Module Name="8BAC0120.001-2" Type="8BAC0120.001-2" X="-3561.2" Y="-2902" />
+    <Module Name="D5_Arm_4_5" Type="8BVI0014HWD0.000-1" X="-3444" Y="-3077" />
+    <Module Name="8BAC0120.001-2c" Type="8BAC0120.001-2" X="-3424.4" Y="-2902" />
+    <Module Name="8BAC0120.001-2d" Type="8BAC0120.001-2" X="-3441.2" Y="-2902" />
+    <Module Name="ACOPOSmulti_Rack_PS" Type="8B0P0220HW00.000-1" X="-3805" Y="-3077" />
+    <Module Name="8BVIxxxxxxDx.xxx-x2" Type="8BVIxxxxxxDx.xxx-x" X="-3324" Y="-3077" />
+    <Module Name="8BAC0120.001-2f" Type="8BAC0120.001-2" X="-3304.4" Y="-2902" />
+    <Module Name="8BAC0120.001-2e" Type="8BAC0120.001-2" X="-3321.2" Y="-2902" />
   </Modules>
   <Links>
     <Link From="5LS182.6-2" To="ACOPOSmulti_Rack_PS" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
@@ -94,6 +98,14 @@
       <Point X="-3422.9668" Y="-2806.20117" />
       <Point X="-3422.9668" Y="-2799.20117" />
       <Point X="-3422.9668" Y="-2799.20117" />
+    </Link>
+    <Link From="8BVIxxxxxxDx.xxx-x2" To="D5_Arm_4_5" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="-3312.1" Y="-3070" />
+      <Point X="-3312.1" Y="-3070" />
+      <Point X="-3324.1" Y="-3070" />
+      <Point X="-3406.2" Y="-3070" />
+      <Point X="-3420.2" Y="-3070" />
+      <Point X="-3420.2" Y="-3070" />
     </Link>
     <Link From="8LSA26.D9060S200-3" To="D5_Arm_4_5" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
       <Point X="-3394.9668" Y="-2799.201" />

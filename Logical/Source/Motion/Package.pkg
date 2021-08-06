@@ -5,6 +5,8 @@
     <Object Type="Package" Description="Robot program">RobotProgram</Object>
     <Object Type="Program" Language="IEC">DeltaCtrl</Object>
     <Object Type="Program" Language="IEC">ConveyorA</Object>
+    <Object Type="Program" Language="IEC">ConveyorB</Object>
     <Object Type="Program" Language="IEC">ProductDetect</Object>
+    <Object Type="Program" Language="IEC">ProductPlacement</Object>
   </Objects>
 </Package>

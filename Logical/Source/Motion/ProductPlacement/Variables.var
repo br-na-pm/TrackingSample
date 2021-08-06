@@ -1,0 +1,16 @@
+VAR
+	PlacementSelected : BOOL := FALSE;
+	MC_BR_TrackingFrameCreateManual : MC_BR_TrackingFrameCreate;
+	MC_BR_TrackingPathGetFrames_Plce : MC_BR_TrackingPathGetFrames := (0);
+	TrkFrmInfo : McTrkFrmInfoType := (0);
+	TRF_Id_Manual : McTrkFrmIdentType := (0);
+	ManualCreateFrame : BOOL := FALSE;
+	ChoosenPlaceFrame : McTrkFrmIdentType := (0);
+	ManualFrameX : LREAL := 0.0;
+	ManualFrameY : LREAL := 0;
+	DeleteFrame : BOOL := FALSE;
+	MC_BR_TrackingFrameDelete_0 : MC_BR_TrackingFrameDelete := (0);
+	RunPickAndPlace : BOOL;
+	ProductPicked : BOOL;
+	ProductPlaced : BOOL;
+END_VAR
