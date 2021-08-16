@@ -68,6 +68,9 @@ PROGRAM _CYCLIC
 	gDeltaCtrl.Status.Stopped			:= DeltaRobot4Ax.Stopped;
 	gDeltaCtrl.Status.InMotion			:= DeltaRobot4Ax.InMotion;
 	gDeltaCtrl.Status.InterruptStatus	:= DeltaRobot4Ax.Info.Program.InterruptStatus;
+	gDeltaCtrl.Status.X                 := DeltaRobot4Ax.X;
+	gDeltaCtrl.Status.Y                 := DeltaRobot4Ax.Y;
+	gDeltaCtrl.Status.Z                 := DeltaRobot4Ax.Z;
 	
 	JointAxisPos[0] := ( DeltaRobot4Ax.Info.JointAxisPosition[0] );
 	JointAxisPos[1] := ( DeltaRobot4Ax.Info.JointAxisPosition[1] );

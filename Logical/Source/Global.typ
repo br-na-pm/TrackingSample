@@ -29,6 +29,9 @@ TYPE
 		MoveInterrupted : BOOL;
 		ProductInRange : BOOL;
 		InterruptStatus : McPrgInfoInterruptEnum;
+		X : LREAL;
+		Y : LREAL;
+		Z : LREAL;
 	END_STRUCT;
 	DeltaCtrlParameter_type : 	STRUCT 
 		Override : REAL;

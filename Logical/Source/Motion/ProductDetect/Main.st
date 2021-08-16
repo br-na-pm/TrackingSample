@@ -85,9 +85,15 @@ PROGRAM _CYCLIC
 	PVIposition[1] := JointAxisPos[1];
 	PVIposition[2] := JointAxisPos[2];
 	PVIposition[3] := JointAxisPos[3];
-	PVIposition[4] := TrkFrmInfo.CurrentPosition.X -605;
-	PVIposition[5] := TrkFrmInfo.CurrentPosition.Y;
-	PVIposition[6] := -20;
+	IF gDeltaCtrl.Status.ProductPicked THEN
+		PVIposition[4] := gDeltaCtrl.Status.X;
+		PVIposition[5] := gDeltaCtrl.Status.Y;
+		PVIposition[6] := gDeltaCtrl.Status.Z + 955;
+	ELSE
+		PVIposition[4] := TrkFrmInfo.CurrentPosition.X -605;
+		PVIposition[5] := TrkFrmInfo.CurrentPosition.Y;
+		PVIposition[6] := -20;
+	END_IF
 	
 END_PROGRAM
 
